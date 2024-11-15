@@ -243,3 +243,64 @@ background:  linear-gradient(90deg,#f15483,#e7e8e2);
     }
 }
 
+/** For screens smaller than 1024px (iPads in landscape mode) **/
+@media screen and(max-width:1024px){
+    body{
+        font-size:90%;
+    }
+    h1{
+        font-size:4rem;
+    }
+    .flip-card-container{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+    .flip-card-inner{
+        width:250px;
+        height:180px;
+    }
+    .gif-container img{
+        width:80%;
+    }
+}
+/** For screens smaller than 768px (iPads in portrait mode, tablets, and some small laptops) **/
+@media screen and(max-width:768px){
+    body{
+        font-size:80%;
+    }
+    h1{
+        font-size:3rem;
+    }
+    .flip-card-inner{
+        width:200px;
+        height:150px;
+    }
+    .git-container img{
+        width:90%;
+    }
+    #celebration-page{
+        margin-top:10px;
+    }
+    .paragraph{
+        font-size:16px;
+    }
+}
+/** For screens smaller than 576px (mobile phones) **/
+@media screen and (max-width:576px){
+    body{
+        font-size:70%;
+    }
+    h1{
+        font-size:2rem;
+    }
+    .flip-card-inner{
+        width:150px;
+        height:100px;
+    }
+    .git-container img{
+        padding:0.5rem 1rem;
+    }
+    .floatin{
+        animation:none;
+    }
+}
